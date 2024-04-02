@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import styles from "./ui/home.module.css"
+import Image from 'next/image'
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} min-h-screen min-w-screen`}>
+        <Image src="/images/logo.png" className={`${styles.logo}`} width={300} height={40} alt="Intensament3d"/>
+        {children}
+        </body>
     </html>
   );
 }

@@ -1,0 +1,60 @@
+.container{
+    width: 1011px;
+    position: relative;
+    color: #fff;
+}
+
+.circle{
+    border-radius: 100%;
+    position: absolute;
+    overflow: hidden;
+    right: -300px;
+    top: -500px;
+    width: 1200px;
+    height: 1300px;
+    transform: rotate(-12deg);
+    background-image: url('/images/hero-image-background.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6f52ffe1;
+}
+
+.title {
+    font-size: 128px;
+    z-index: 10;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.mask {
+    position: absolute;
+    z-index: 100;
+    top: 120px;
+    left: -110px;
+}
+
+.subtitle{
+    position: absolute;
+    right: 120px;
+    top: 180px;
+    font-size: 64px;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.text {
+    position: absolute;
+    right: 20px;
+    top: 300px;
+    font-size: 20px;
+}
